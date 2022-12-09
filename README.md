@@ -3,6 +3,8 @@ Learn how to add accessibility features to your unity game.
 
 There will be three types of accessibility focused on in this repository: cognitive, motor, visual, and hearing. Each section has its own folder.
 
+For these lessons, I used Unity 2020.3.24f and Inky version 0.12.0
+
 <h2>Cognitive Accessibility (Using Inkle)</h2>
 <ul>
   <li>Tone indicators</li>
