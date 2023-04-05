@@ -3,14 +3,6 @@ Learn how to add cognitive accessibility features in Inky. Add Ink to your unity
 
 You must have [Ink by Inkle](https://www.inklestudios.com/ink/) integrated into your project to use these instructions. 
 
-<h2>Tone Indicators</h2>
-<p>Tone indicators are either words or shorthands for words that are used to convey tone. For example, /srs or /serious after a question means it is a serious question. Tone is very difficult to convey with text alone, which can confuse players. Tone indicators remove that barrier to understanding your story, especially for people with cognitive disabilities. All tone indicators have a / in front, to show the start of the tone indicator.</p>
-
-<p>I would recommend using https://toneindicators.carrd.co/# to learn more about tone indicators and common indicators used.</p>
-
-<h3>Creating Tone Indicators</h3>
-
-
 <h2>Content Warnings</h2>
 Content warnings are essentially warnings that let the readers know what future content will contain, in case reading that it would be harmful to them. 
 Content warnings may include the following: 
