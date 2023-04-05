@@ -18,7 +18,6 @@ To create this user choice, substitute your content warning names with the follo
 ->determine
 
 */
-
 +[turn first warning {firstWarning: off} {not firstWarning: on}]
 {changeWarning(firstWarning)}
 ->determine
@@ -27,13 +26,13 @@ To create this user choice, substitute your content warning names with the follo
 {changeWarning(secondWarning)}
 ->determine
 
-+[turn second warning {thirdWarning: off} {not thirdWarning: on}]
++[turn third warning {thirdWarning: off} {not thirdWarning: on}]
 {changeWarning(thirdWarning)}
 ->determine
 
 
 +[turn summary {summary: off} {not summary: on}]
-{changeSummary(not summary)}
+{changeSummary()}
 ->determine
 
 +[Done]
@@ -42,18 +41,18 @@ To create this user choice, substitute your content warning names with the follo
 === choices_made ===
 {showContent(firstWarning, "The raw first warning content", "the summarized first warning content")}
 {showContent(secondWarning, "The raw second warning content", "the summarized second warning content")}
-{showContent(thirdWarning, "The raw third warning warning content", "the summarized third warning content")}
+{showContent(thirdWarning, "The raw third warning content", "the summarized third warning content")}
 ->DONE
 
 
-=== function changeWarning(warning)
-~ warning = not warning
+=== function changeWarning(ref warning)
+~warning = not warning
 
 === function changeSummary()
 ~summary = not summary
 
 === function showContent(warning, content, summaryContent)
-{warning: 
+{not warning: 
     {content}
     -else:
         {summary:
