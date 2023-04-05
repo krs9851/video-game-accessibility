@@ -1,5 +1,5 @@
 # unity-accessibility
-Learn how to add cognitive accessibility features to your unity game.
+Learn how to add cognitive accessibility features in Inky. Add Ink to your unity project using the [plugin here](https://assetstore.unity.com/packages/tools/integration/ink-unity-integration-60055).
 
 You must have [Ink by Inkle](https://www.inklestudios.com/ink/) integrated into your project to use these instructions. 
 
