@@ -7,7 +7,6 @@ For these lessons, I used Unity 2020.3.24f and Inky version 0.12.0
 
 <h2>Cognitive Accessibility (Using Inkle)</h2>
 <ul>
-  <li>Tone indicators</li>
   <li>Content warnings</li>
 </ul>
 
