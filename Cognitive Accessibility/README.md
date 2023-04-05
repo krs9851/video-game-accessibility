@@ -28,7 +28,6 @@ Now there are two ways to create tone indicators. To see the more advanced optio
 
 
 <b>Advanced.ink</b>
-
 To use the lists, there are four functions you can call. But before you do that, you must create the LIST of content warnings and the boolean VAR of summary at the top of the file. You can add more content warnings at any time by appending them to the list. Next, copy and past the four functions  showContent(warning, content, summaryContent), addWarning(warning), removeWarning(warning), and changeSummary(value) to your file. These functions will change what content is shown. Call addWarning, with the warning name specified in your contentWarning list, to turn the content supression on for that type of content. Call removeWarning to do the opposite. The function changeSummary should be passed either true or false to change whether or not a summary is shown for the content instead. Then, call showContent with the warning name, the raw content, and the summarized content every time sensitive content is shown to automatically print out the correct content to be read. You do <b>not</b> need to do this for every line, just the lines that contain content a user might need to have changed. 
 
 <b>Beginner.ink</b>
