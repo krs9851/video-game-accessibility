@@ -3,7 +3,7 @@ Learn how to add accessibility features to your unity game.
 
 There will be four types of accessibility focused on in this repository: mental health, motor, visual, and hearing. Each section has its own folder. This is not the only accessibility measures you will need to take, but these are the ones possible and relevant to most Unity games. For more information about game accessibility, I recommend the following resources:
 <ul>
-  <li><a href="https://caniplaythat.com/category/resources/accessibility-reference-guides/">Can I Play That?</a></li>\
+  <li><a href="https://caniplaythat.com/category/resources/accessibility-reference-guides/">Can I Play That?</a></li>
   <li><a href="https://gameaccessibilityguidelines.com/">Game Accessibility Guidelines</a></li>
 </ul>
 
