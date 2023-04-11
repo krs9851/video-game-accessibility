@@ -1,29 +1,52 @@
 # unity-accessibility
-Learn how to add accessibility features to your unity game.
+Learn how to add accessibility features to your unity game. 
+You must be using Unity's new input system:
 
-There will be three types of accessibility focused on in this repository: cognitive, motor, visual, and hearing. Each section has its own folder.
+[Install the input system here.](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/Installation.html)
 
-<h2>Cognitive Accessibility (Using Inkle)</h2>
-<ul>
-  <li>Tone indicators</li>
-  <li>Content warnings</li>
-</ul>
+[Learn about using Unity's new input system here.](https://gamedevbeginner.com/input-in-unity-made-easy-complete-guide-to-the-new-system/)
 
-<h2>Motor Accessibility</h2>
-<ul>
-  <li>Control remapping</li>
-  <li>Adjustable sensitivity settings</li>
-</ul>
 
-<h2>Visual Accessibility</h2>
-<ul>
-  <li>Changing font</li>
-  <li>Changing font size</li>
-  <li>Changing button images and font colors</li>
-</ul>
+<h1>Motor Accessibility</h1>
 
-<h2>Hearing Accessibility</h2>
-<ul>
-  <li>Volume Control</li>
-  <li>Closed Captions</li>
-</ul>
+
+<h2>Key Rebinding</h2>
+
+Key rebinding is the process of allowing different users to use differents key to preform the same action. For example, if "E" causes the playable charater to interact, but a user wants to press "spacebar" instead, key rebinding could solve that. While widespread, this is especially important functionality for users with physical disabilties. Having key rebinding can reduce pain, increase playtime, or even be the gateway to playing the game at all. All keys should have the option to be rebound, including UI keys. 
+
+All work referenced is being done in the UnityMotorAccessibility folder. Before starting this section, make sure you have installed the new input system, created Input Actions, and set the intiial keybinds. Make sure you have a gameobject in the scene that contains a Player Input component with the Input Actions given to it. See the EventSystems gameobject for reference. This tutorial was inspired by [How To Implement Key Rebinding by Dapper Dino.](https://www.youtube.com/watch?v=dUCcZrPhwSo)
+
+In this tutorial, instead of having a character move and jump, the words "move left", "move right", "move up", "move down", and "jump" will appear on screen. This is because the focus is rebinding controls, not hooking up the new input system. 
+
+You can find the Input Actions in the /PlayerInput folder, named PlayerControls. For this tutorial, we have two options: keyboard-only gameplay and keyboard + mouse gameplay. The movement is the same for both the "keyboard" and "keyboard + mouse" control schemes. However, the jump action is the up arrow key for keyboard-only and left click for keyboard + mouse. This means that which control scheme is active is important because you do not want a player to move AND jump by using the same arrow keys. However, if the player is using the mouse or another key to jump, you want the arrow keys to be a rebind option. 
+
+Steps:
+<ol>
+  <li>Set up the new Input System</li>
+  <li>Create your Control Schemes</li>
+  <li>Create your Input Actions and initial keybinds</li>
+  <li>Create a gameobject that contains the Player Input component</li>
+  <li>
+  Either import the KeyrebindingPackage.unitypackage or recreate the scripts and gameobjects. At minimum you need: 
+  <ul>
+    <li>The prefab Rebind which contains the UI elements present in rebinding</li>
+    <li>The ControlRebinding.cs script</li>
+  </ul>
+  </li>
+  <li>Create a Rebind prefab for each of your different keys by changing the serialized variables Input Action and Binding
+  <ul>
+    <li>The Input Action corresponds to the Input Actions you created earlier</li>
+    <li>The Binding is the index number that corresponds to the entry underneath the Input Action</li>
+  </ul>
+  </li>
+  <li>Optional: Create a Rebinding Parent for different control schemes, using the Rebind Parent prefab as an example. At minimum you need: 
+  <ul>
+    <li>The ControlSceneChange.cs script</li>
+    <li>At least two different control schemes</li>
+    <li>Gameobjects to contain the different Rebind prefabs that correspond to the different control schemes</li>
+    <li>A dropdown to change the control schemes</li>
+  </ul>
+  </li>
+</ol>
+
+Tip: having a keyboard-only, mouse-only, and/or gamepad-only option for gameplay greatly increases the accessibility of the game. 
