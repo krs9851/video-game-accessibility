@@ -10,10 +10,9 @@ For these lessons, I used Unity 2020.3.24f and Inky version 0.12.0
   <li>Content warnings</li>
 </ul>
 
-<h2>Motor Accessibility (Not Started)</h2>
+<h2>Motor Accessibility (Completed)</h2>
 <ul>
   <li>Control remapping</li>
-  <li>Adjustable sensitivity settings</li>
 </ul>
 
 <h2>Visual Accessibility (Not Started)</h2>
