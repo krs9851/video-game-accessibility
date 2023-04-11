@@ -29,8 +29,8 @@ Steps:
   <li>
   Either import the KeyrebindingPackage.unitypackage or recreate the scripts and gameobjects. At minimum you need: 
   <ul>
-    <li>The prefab Rebind which contains the UI elements present in rebinding</li>
-    <li>The ControlRebinding.cs script</li>
+    <li><a href="https://github.com/krs9851/unity-accessibility/blob/main/Motor%20Accessibility/UnityMotorAccessibility/Assets/Prefabs/Rebind.prefab">The prefab Rebind which contains the UI elements present in rebinding</a></li>
+    <li><a href="https://github.com/krs9851/unity-accessibility/blob/main/Motor%20Accessibility/UnityMotorAccessibility/Assets/_Scripts/ControlRebinding.cs">The ControlRebinding.cs script</a></li>
   </ul>
   </li>
   <li>Create a Rebind prefab for each of your different keys by changing the serialized variables Input Action and Binding
@@ -39,9 +39,9 @@ Steps:
     <li>The Binding is the index number that corresponds to the entry underneath the Input Action</li>
   </ul>
   </li>
-  <li>Optional: Create a Rebinding Parent for different control schemes, using the Rebind Parent prefab as an example. At minimum you need: 
+  <li>Optional: Create a Rebinding Parent for different control schemes, using the <a href="https://github.com/krs9851/unity-accessibility/blob/main/Motor%20Accessibility/UnityMotorAccessibility/Assets/Prefabs/Rebinding%20Parent.prefab">Rebind Parent prefab</a> as an example. At minimum you need: 
   <ul>
-    <li>The ControlSceneChange.cs script</li>
+    <li><a href="https://github.com/krs9851/unity-accessibility/blob/main/Motor%20Accessibility/UnityMotorAccessibility/Assets/_Scripts/ControlSceneChange.cs">The ControlSceneChange.cs script</a></li>
     <li>At least two different control schemes</li>
     <li>Gameobjects to contain the different Rebind prefabs that correspond to the different control schemes</li>
     <li>A dropdown to change the control schemes</li>
