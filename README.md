@@ -10,7 +10,7 @@ For these lessons, I used Unity 2020.3.24f and Inky version 0.12.0
   <li>Content warnings</li>
 </ul>
 
-<h2>Motor Accessibility (Completed)</h2>
+<h2>Motor Accessibility (Using Unity's New Input System)</h2>
 <ul>
   <li>Control remapping</li>
 </ul>
