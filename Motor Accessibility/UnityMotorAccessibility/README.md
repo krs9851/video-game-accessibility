@@ -7,4 +7,4 @@ Try the assets folder! That contains everything you need to do your key rebindin
 
 <h3>Looking for something not in the assets folder?</h3>
 
-Everything else here is just extra Unity code and compilers. You are probably in the wrong subfolder. 
+Everything else here is just extra Unity stuff. You are probably in the wrong subfolder. 
