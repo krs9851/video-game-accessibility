@@ -2,12 +2,15 @@
 Learn how to add accessibility features to your unity game.
 
 <h1>Hearing Accessibility</h1>
+
 <p>This section has two subsections: closed captions and volume controls. These accessibility features are primarily for Deaf/Hard of Hearing users, but can benefit anyone. For example, if someone is unable or must strain to hear the sound effects or musical cues, they may rely on closed captions for that content. In addition, if someone is trying to listen carefully for certain sound effects, they may want to lower the volume of the music and ambient sounds and turn up the volume of those important sound effects. Of course, this could also apply to blind and low vision users who rely on feedback of important sound effect cues or someone with sensory overload who cannot have multiple sounds playing at once.</p>
 
 <h2>Closed Captions</h2>
+
 <p>Closed captions aren't a "one size fits all". Instead, you should have multiple closed caption options. If a user only wants to read the important auditory cues, that should be an option. If a users wants to read every auditory component of the game, that should also be an option. Even if you can theoretically see something related to the auditory cue on screen, that doesn't change the need for closed captions. A user may not be looking at the related visual component, or pay it any mind, without the closed caption to give it significance.</p> 
 <p>For this example, we have the following sections: all sound, critial sound effects, ambient sound, critical musical shifts, music. Critical sound effects and musical shifts means anything that notifies a player of something important. For example, if a player is walking on a frozen lake, the cracking of ice would be critical sound effect.</p>
 
 <h2>Volume Controls</h2>
+
 <p>Like closed captions, users should be able to customize the volume of individual game sounds. Not all sound effects have the same importance, and your volume controls should reflect that. While all sound is essential to the feel of your game, not all sound is essential to being able to participate in playing your game.</p>
 <p>For this example, we have the following sections: all sound, critial sound effects, ambient sound, critical musical shifts, music. Critical sound effects and musical shifts means anything that notifies a player of something important. For example, music that notifies a player that an enemy is nearby. This corresponds to the options for closed captions, so if a player turns off the volume of one option, they can turn on its related closed caption.</p>
