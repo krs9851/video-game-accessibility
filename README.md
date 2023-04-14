@@ -26,7 +26,7 @@ For these lessons, I used Unity 2020.3.24f and Inky version 0.12.0
   <li>Changing button images and font colors</li>
 </ul>
 
-<h2>Hearing Accessibility (Not Started)</h2>
+<h2>Hearing Accessibility (Using Unity's Built in Functionality)</h2>
 <ul>
   <li>Volume Control</li>
   <li>Closed Captions</li>
