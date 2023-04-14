@@ -14,3 +14,15 @@ Learn how to add accessibility features to your unity game.
 
 <p>Like closed captions, users should be able to customize the volume of individual game sounds. Not all sound effects have the same importance, and your volume controls should reflect that. While all sound is essential to the feel of your game, not all sound is essential to being able to participate in playing your game.</p>
 <p>For this example, we have the following sections: all sound, critial sound effects, ambient sound, critical musical shifts, music. Critical sound effects and musical shifts means anything that notifies a player of something important. For example, music that notifies a player that an enemy is nearby. This corresponds to the options for closed captions, so if a player turns off the volume of one option, they can turn on its related closed caption.</p>
+
+<h2>Building Closed Captions and Volume Control</h2>
+
+<p>Instead of building closed captions and volume controls seperately, we are going to use one script to achieve both features. Essentially, every time the game wants to play a sound, it will call "public float PlaySound(AudioClip audioClip)" the Sound Manager will generate closed captions and return the volume that the sound should be played at. To call this function from the Sound Manager, we will be using <a href="https://gamedevbeginner.com/singletons-in-unity-the-right-way/">Singletons, which you can learn about here</a>. So a basic script would look something like this:</p>
+
+`float volume = SoundManager.Instance.PlaySound(selectedAudioClip)`
+
+`audioSource.volume = volume;`
+
+`audioSource.clip = selectedAudioClip;`
+
+`audioSource.Play();`
