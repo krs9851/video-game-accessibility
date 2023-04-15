@@ -47,7 +47,7 @@ public class SoundManager : MonoBehaviour
         //Turn off all the closed captions initially
         foreach (TextMeshProUGUI text in closedCaptions)
         {
-            text.gameObject.SetActive(false);
+            text.GetComponentInParent<GameObject>().SetActive(false);
         }
     }
 
@@ -116,11 +116,11 @@ public class SoundManager : MonoBehaviour
         closedCaptions[(int)soundInfo.musicType - 1].text = String.Join(", ", closedCaptionStrings[(int)soundInfo.musicType]);
         if(closedCaptionStrings[(int)soundInfo.musicType].Count == 0)
         {
-            closedCaptions[(int)soundInfo.musicType - 1].gameObject.SetActive(false);
+            closedCaptions[(int)soundInfo.musicType - 1].GetComponentInParent<GameObject>().SetActive(false);
         }
         else
         {
-            closedCaptions[(int)soundInfo.musicType - 1].gameObject.SetActive(true);
+            closedCaptions[(int)soundInfo.musicType - 1].GetComponentInParent<GameObject>().SetActive(true);
         }
     }
 }
