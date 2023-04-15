@@ -37,10 +37,10 @@ SoundManager.Instance.PlayMusic(selectedAudioClip);
   <li>Decide what categories of sounds will exist in your game</li>
   <li>Import the HearingPackage.unitypackage or copy the following scripts into your own project 
     <ul>
-      <li>SoundInfo.cs</li>
-      <li>SO_SoundInfo.cs</li>
-      <li>SoundManager.cs</li>
-      <li>ButtonManagerSound.cs</li>
+      <li><a href="https://github.com/krs9851/unity-accessibility/blob/main/Hearing%20Accessibility/HearingUnityProject/Assets/_Scripts/SoundInfo.cs">SoundInfo.cs</a></li>
+      <li><a href="https://github.com/krs9851/unity-accessibility/blob/main/Hearing%20Accessibility/HearingUnityProject/Assets/_Scripts/SO_SoundInfo.cs">SO_SoundInfo.cs</a></li>
+      <li><a href="https://github.com/krs9851/unity-accessibility/blob/main/Hearing%20Accessibility/HearingUnityProject/Assets/_Scripts/SoundManager.cs">SoundManager.cs</a></li>
+      <li><a href="https://github.com/krs9851/unity-accessibility/blob/main/Hearing%20Accessibility/HearingUnityProject/Assets/_Scripts/ButtonManagerSound.cs">ButtonManagerSound.cs</a></li>
     </ul>
   </li>
   <li>Create the so_SoundInfo scriptable object and insert different sounds</li>
