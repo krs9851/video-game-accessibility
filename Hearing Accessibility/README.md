@@ -31,7 +31,7 @@ audioSource.Play();
 SoundManager.Instance.PlayMusic(selectedAudioClip); 
 ```
 
-<p>Once you have implemented Singleton funcionality and understand the basics of <a href="https://docs.unity3d.com/Manual/class-ScriptableObject.html">scriptable objects</a>, it is time to actually implement the Sound Manager.</p>
+<p>Once you have implemented <a href="https://gamedevbeginner.com/singletons-in-unity-the-right-way/">Singleton</a> funcionality and understand the basics of <a href="https://docs.unity3d.com/Manual/class-ScriptableObject.html">scriptable objects</a>, it is time to actually implement the Sound Manager.</p>
 <p>Steps:</p>
 <ol>
   <li>Decide what categories of sounds will exist in your game</li>
