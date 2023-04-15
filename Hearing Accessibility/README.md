@@ -1,5 +1,5 @@
 # unity-accessibility
-Learn how to add accessibility features to your unity game.
+<p>Learn how to add accessibility features to your unity game. You must understand <a href="https://gamedevbeginner.com/singletons-in-unity-the-right-way/">Singletons</a> and <a href="https://docs.unity3d.com/Manual/class-ScriptableObject.html">Scriptable Objects</a> before starting. In addition, you must have <a href="https://docs.unity3d.com/Manual/com.unity.textmeshpro.html">TextMeshPro</a> installed to use any of the prefabs.
 
 <h1>Hearing Accessibility</h1>
 
@@ -17,12 +17,46 @@ Learn how to add accessibility features to your unity game.
 
 <h2>Building Closed Captions and Volume Control</h2>
 
-<p>Instead of building closed captions and volume controls seperately, we are going to use one script to achieve both features. Essentially, every time the game wants to play a sound, it will call "public float PlaySound(AudioClip audioClip)" the Sound Manager will generate closed captions and return the volume that the sound should be played at. To call this function from the Sound Manager, we will be using <a href="https://gamedevbeginner.com/singletons-in-unity-the-right-way/">Singletons, which you can learn about here</a>. So a basic script would look something like this:</p>
+<p>Instead of building closed captions and volume controls seperately, we are going to use one script to achieve both features. Essentially, every time an object wants to play a sound effect, it will call "public float PlaySound(AudioClip audioClip)" the Sound Manager will generate closed captions and return the volume that the sound should be played at. To call this function from the Sound Manager, we will be using <a href="https://gamedevbeginner.com/singletons-in-unity-the-right-way/">Singletons, which you can learn about here</a>. So a basic script to play a sound would look something like this:</p>
 
-`float volume = SoundManager.Instance.PlaySound(selectedAudioClip)`
+```
+float volume = SoundManager.Instance.PlaySound(selectedAudioClip); 
+audioSource.volume = volume;
+audioSource.clip = selectedAudioClip;
+audioSource.Play();
+```
+<p>The music will be controlled by the Sound Manager, so to change the music, objects will call "public void PlayMusic(AudioClip audioClip)". That function will generate closed captions to alert users of the change of music and then play the music at the appropriate volume on repeat. A basic music change would look like this:</p>
 
-`audioSource.volume = volume;`
+```
+SoundManager.Instance.PlayMusic(selectedAudioClip); 
+```
 
-`audioSource.clip = selectedAudioClip;`
-
-`audioSource.Play();`
+<p>Once you have implemented Singleton funcionality and understand the basics of <a href="https://docs.unity3d.com/Manual/class-ScriptableObject.html">scriptable objects</a>, it is time to actually implement the Sound Manager.</p>
+<p>Steps:</p>
+<ol>
+  <li>Decide what categories of sounds will exist in your game</li>
+  <li>Import the HearingPackage.unitypackage or copy the following scripts into your own project 
+    <ul>
+      <li>SoundInfo.cs</li>
+      <li>SO_SoundInfo.cs</li>
+      <li>SoundManager.cs</li>
+      <li>ButtonManagerSound.cs</li>
+    </ul>
+  </li>
+  <li>Create the so_SoundInfo scriptable object and insert different sounds</li>
+  <li>Change the Singleton functionality in SoundManager.cs to your own version</li>
+  <li>Change the SoundType enum to fit your sound categories</li>
+  <li>Either add the "Volume & CC" and "ClosedCaptions" prefabs to your scene or recreate them.
+    <ul>
+      <li>Make sure to keep the layout groups for the ClosedCaptions prefab</li>
+      <li>You will want to make a Control and ClosedCaption prefab for each of the different sound types</li>
+      <li>Change the Control SoundType for each of the controls</li>
+    </ul>
+  </li>
+  <li>Create the gameObject SoundManager and give it the SoundManager.cs script
+    <ul>
+      <li>Drag in the serialized objects. Make sure the closed caption texts are in the correct order</li>
+    </ul>
+  </li>
+  <li>Call the PlayMusic and PlaySound functions to play sounds</li>
+</ol>
