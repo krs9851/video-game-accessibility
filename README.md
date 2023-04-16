@@ -16,7 +16,7 @@ For these lessons, I used Unity 2020.3.24f and Inky version 0.12.0
 
 <h2>Motor Accessibility (Using Unity's New Input System)</h2>
 <ul>
-  <li>Control remapping</li>
+  <li>Control rebinding</li>
 </ul>
 
 <h2>Visual Accessibility (Not Started)</h2>
