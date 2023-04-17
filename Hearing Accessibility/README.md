@@ -1,6 +1,8 @@
 # unity-accessibility
 <p>Learn how to add accessibility features to your unity game. You must understand <a href="https://gamedevbeginner.com/singletons-in-unity-the-right-way/">Singletons</a> and <a href="https://docs.unity3d.com/Manual/class-ScriptableObject.html">Scriptable Objects</a> before starting. In addition, you must have <a href="https://docs.unity3d.com/Manual/com.unity.textmeshpro.html">TextMeshPro</a> installed to use any of the prefabs.
 
+**[If you get stuck on any steps, consult the wiki.](https://github.com/krs9851/unity-accessibility/wiki/Hearing-Accessibility)**
+
 <h1>Hearing Accessibility</h1>
 
 <p>This section has two subsections: closed captions and volume controls. These accessibility features are primarily for Deaf/Hard of Hearing users, but can benefit anyone. For example, if someone is unable or must strain to hear the sound effects or musical cues, they may rely on closed captions for that content. In addition, if someone is trying to listen carefully for certain sound effects, they may want to lower the volume of the music and ambient sounds and turn up the volume of those important sound effects. Of course, this could also apply to blind and low vision users who rely on feedback of important sound effect cues or someone with sensory overload who cannot have multiple sounds playing at once.</p>
@@ -32,6 +34,9 @@ SoundManager.Instance.PlayMusic(selectedAudioClip);
 ```
 
 <p>Once you have implemented <a href="https://gamedevbeginner.com/singletons-in-unity-the-right-way/">Singleton</a> funcionality and understand the basics of <a href="https://docs.unity3d.com/Manual/class-ScriptableObject.html">scriptable objects</a>, it is time to actually implement the Sound Manager.</p>
+
+**[If you get stuck on any steps, consult the wiki.](https://github.com/krs9851/unity-accessibility/wiki/Hearing-Accessibility)**
+
 <p>Steps:</p>
 <ol>
   <li>Decide what categories of sounds will exist in your game</li>
