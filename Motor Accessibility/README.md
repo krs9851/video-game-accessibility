@@ -6,6 +6,8 @@ You must be using Unity's new input system:
 
 [Learn about using Unity's new input system here.](https://gamedevbeginner.com/input-in-unity-made-easy-complete-guide-to-the-new-system/)
 
+**[If you get stuck on any steps, consult the wiki.](https://github.com/krs9851/unity-accessibility/wiki/Motor-Accessibility)**
+
 
 <h1>Motor Accessibility</h1>
 
@@ -19,6 +21,8 @@ All work referenced is being done in the UnityMotorAccessibility/Assets folder. 
 In this tutorial, instead of having a character move and jump, the words "move left", "move right", "move up", "move down", and "jump" will appear on screen. This is because the focus is rebinding controls, not hooking up the new input system. 
 
 You can find the Input Actions in the /PlayerInput folder, named PlayerControls. For this tutorial, we have two options: keyboard-only gameplay and keyboard + mouse gameplay. The movement is the same for both the "keyboard" and "keyboard + mouse" control schemes. However, the jump action is the up arrow key for keyboard-only and left click for keyboard + mouse. This means that which control scheme is active is important because you do not want a player to move AND jump by using the same arrow keys. However, if the player is using the mouse or another key to jump, you want the arrow keys to be a rebind option. 
+
+**[Once again, you get stuck on any steps, consult the wiki.](https://github.com/krs9851/unity-accessibility/wiki/Motor-Accessibility)**
 
 Steps:
 <ol>
