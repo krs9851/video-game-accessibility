@@ -22,7 +22,7 @@ In this tutorial, instead of having a character move and jump, the words "move l
 
 You can find the Input Actions in the /PlayerInput folder, named PlayerControls. For this tutorial, we have two options: keyboard-only gameplay and keyboard + mouse gameplay. The movement is the same for both the "keyboard" and "keyboard + mouse" control schemes. However, the jump action is the up arrow key for keyboard-only and left click for keyboard + mouse. This means that which control scheme is active is important because you do not want a player to move AND jump by using the same arrow keys. However, if the player is using the mouse or another key to jump, you want the arrow keys to be a rebind option. 
 
-**[Once again, you get stuck on any steps, consult the wiki.](https://github.com/krs9851/unity-accessibility/wiki/Motor-Accessibility)**
+**[Once again, if you get stuck on any steps, consult the wiki.](https://github.com/krs9851/unity-accessibility/wiki/Motor-Accessibility)**
 
 Steps:
 <ol>
