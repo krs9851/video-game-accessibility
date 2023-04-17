@@ -24,7 +24,7 @@ Steps:
 <ol>
   <li>Set up the new <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/Installation.html">Input System</a></li>
   <li>Create your Control Schemes (ie. the types of input you will accept)</li>
-  <li><a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/Actions.html">Create your Input Actions and initial keybinds</a></li>
+  <li><a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/ActionAssets.html">Create your Input Actions and initial keybinds</a></li>
   <li>Create a gameobject that contains the Player Input component</li>
   <li>
   Either import the KeyrebindingPackage.unitypackage or recreate the scripts and gameobjects. At minimum you need: 
