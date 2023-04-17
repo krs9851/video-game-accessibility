@@ -43,9 +43,9 @@ SoundManager.Instance.PlayMusic(selectedAudioClip);
       <li><a href="https://github.com/krs9851/unity-accessibility/blob/main/Hearing%20Accessibility/HearingUnityProject/Assets/_Scripts/ButtonManagerSound.cs">ButtonManagerSound.cs</a></li>
     </ul>
   </li>
-  <li>Create the so_SoundInfo scriptable object and insert different sounds</li>
   <li>Change the Singleton functionality in SoundManager.cs to your own version</li>
   <li>Change the SoundType enum to fit your sound categories</li>
+  <li>Create the so_SoundInfo scriptable object and insert different sounds</li>
   <li>Either add the "Volume & CC" and "ClosedCaptions" prefabs to your scene or recreate them.
     <ul>
       <li>Make sure to keep the layout groups for the ClosedCaptions prefab</li>
