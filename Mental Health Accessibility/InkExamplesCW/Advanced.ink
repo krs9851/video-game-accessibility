@@ -35,7 +35,7 @@ To create this user choice, substitute your content warning names with the follo
 
 
 +[turn summary {summary: off} {not summary: on}]
-{changeSummary(not summary)}
+{changeSummary()}
 ->determine
 
 +[Done]
@@ -66,6 +66,6 @@ To create this user choice, substitute your content warning names with the follo
 
 
 
-=== function changeSummary(value)
-~ summary = value
+=== function changeSummary
+~ summary = !summary
 
