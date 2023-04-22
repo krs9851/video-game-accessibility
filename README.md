@@ -9,7 +9,7 @@ There will be four types of accessibility focused on in this repository: mental 
   <li><a href="https://gameaccessibilityguidelines.com/">Game Accessibility Guidelines</a></li>
 </ul>
 
-<a href="https://github.com/krs9851/unity-accessibility/wiki">To learn more in-depth about the features shown here, check the wiki or the sub-folder wikis!</a>
+<a href="https://github.com/krs9851/unity-accessibility/wiki">To learn more in-depth about the features shown here, check the wiki or the sub-folder read-me!</a>
 
 For these lessons, I used Unity 2020.3.24f and Inky version 0.12.0
 
@@ -23,7 +23,7 @@ For these lessons, I used Unity 2020.3.24f and Inky version 0.12.0
   <li>Control rebinding</li>
 </ul>
 
-<h2>Visual Accessibility (Not Started)</h2>
+<h2>Visual Accessibility (Using TextMeshPro)</h2>
 <ul>
   <li>Changing font</li>
   <li>Changing font size</li>
