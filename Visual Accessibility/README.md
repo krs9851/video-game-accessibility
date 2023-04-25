@@ -1,29 +1,16 @@
 # unity-accessibility
-Learn how to add accessibility features to your unity game.
+<p>Learn how to add accessibility features to your unity game. You must have <a href="https://docs.unity3d.com/Manual/com.unity.textmeshpro.html">TextMeshPro</a> installed to use any of the prefabs.
 
-There will be three types of accessibility focused on in this repository: cognitive, motor, visual, and hearing. Each section has its own folder.
+**[If you get stuck on any steps, consult the wiki.](https://github.com/krs9851/unity-accessibility/wiki/Visual-Accessibility)**
 
-<h2>Cognitive Accessibility (Using Inkle)</h2>
-<ul>
-  <li>Tone indicators</li>
-  <li>Content warnings</li>
-</ul>
+<h1>Visual Accessibility</h1>
 
-<h2>Motor Accessibility</h2>
-<ul>
-  <li>Control remapping</li>
-  <li>Adjustable sensitivity settings</li>
-</ul>
+<p>This section has two subsections: adjusting text's font and color</p>
 
-<h2>Visual Accessibility</h2>
-<ul>
-  <li>Changing font</li>
-  <li>Changing font size</li>
-  <li>Changing button images and font colors</li>
-</ul>
+<h2>Font Adjustments</h2>
 
-<h2>Hearing Accessibility</h2>
-<ul>
-  <li>Volume Control</li>
-  <li>Closed Captions</li>
-</ul>
+<h3>Building Font Adjustments</h3>
+
+<h2>Color Adjustments</h2>
+
+<h3>Building Color Adjustments</h3>
