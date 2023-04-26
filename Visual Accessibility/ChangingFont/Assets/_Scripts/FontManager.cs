@@ -19,19 +19,25 @@ public class FontManager : MonoBehaviour
 
     private void Awake()
     {
+        chosenFont = 0;
+        SceneChange();
+    }
+
+    public void SceneChange()
+    {
         textProElements = new List<TextMeshProUGUI>();
         textElements = new List<Text>();
         for (int i = 0; i < SceneManager.sceneCount; i++)
         {
             GameObject[] parentObjects = SceneManager.GetSceneAt(i).GetRootGameObjects();
-            foreach(GameObject parent in parentObjects)
+            foreach (GameObject parent in parentObjects)
             {
                 textProElements.AddRange(parent.GetComponentsInChildren<TextMeshProUGUI>(true));
                 textElements.AddRange(parent.GetComponentsInChildren<Text>(true));
             }
         }
 
-        ChangeFont(0);
+        ChangeFont(chosenFont);
     }
 
     public void ChangeFont(int fontNum)
