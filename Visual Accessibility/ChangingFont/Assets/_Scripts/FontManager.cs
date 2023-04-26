@@ -15,8 +15,11 @@ public class FontManager : MonoBehaviour
     [SerializeField]
     private Font[] fonts;
 
+    private int chosenFont;
+
     private void Awake()
     {
+        chosenFont = 0;
         SceneChange();
     }
 
@@ -33,10 +36,13 @@ public class FontManager : MonoBehaviour
                 textElements.AddRange(parent.GetComponentsInChildren<Text>(true));
             }
         }
+
+        ChangeFont(chosenFont);
     }
 
     public void ChangeFont(int fontNum)
     {
+        chosenFont = fontNum;
         foreach(TextMeshProUGUI textProElement in textProElements)
         {
             textProElement.font = fontsPro[fontNum];
@@ -46,4 +52,20 @@ public class FontManager : MonoBehaviour
             textElement.font = fonts[fontNum];
         }
     }
+
+    public void Register(GameObject gameObject)
+    {
+        foreach (TextMeshProUGUI textMeshPro in gameObject.GetComponentsInChildren<TextMeshProUGUI>(true))
+        {
+            textMeshPro.font = fontsPro[chosenFont];
+        }
+        foreach(Text text in gameObject.GetComponentsInChildren<Text>(true))
+        {
+            text.font = fonts[chosenFont];
+        }
+
+        textProElements.AddRange(gameObject.GetComponentsInChildren<TextMeshProUGUI>(true));
+        textElements.AddRange(gameObject.GetComponentsInChildren<Text>(true));
+    }
+
 }
