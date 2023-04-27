@@ -51,7 +51,7 @@
    </ul>
   </li>
   <li>Call the SceneChange function of FontManager.cs every time the scene changes</li>
-  <li>Call the Register function of FontManager.cs every time a canvas gameObject is spawned in the scene, and pass in the canvas</li>
+  <li>Call the Register function of FontManager.cs every time a canvas or text/TextMeshPro gameObject is spawned in the scene, and pass in the canvas or text/TextMeshPro gameObject</li>
 </ol>
 
 <h2>Color Adjustments</h2>
