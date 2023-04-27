@@ -44,6 +44,11 @@ public class SoundManager : MonoBehaviour
         //Keep this code. It sets up the list of all closed captions
         closedCaptionStrings = new List<string>[(int)SoundType.count];
 
+        for(int i = 0; i < (int)SoundType.count; i++)
+        {
+            closedCaptionStrings[i] = new List<string>();
+        }
+
         //Turn off all the closed captions initially
         foreach (TextMeshProUGUI text in closedCaptions)
         {
@@ -125,7 +130,8 @@ public class SoundManager : MonoBehaviour
     }
 }
 
-
+//Enum of all sound types
+//Change this to reflect your sound types
 public enum SoundType
 {
     allSound = 0,
