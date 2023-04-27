@@ -29,6 +29,8 @@
   
 <p>The function SceneChange of FontManager.cs should be called every time a scene is loaded or unloaded. If a canvas is spawned after a scene is loaded, it should call the Register function of FontManager.cs and pass in itself. This way, all of the text it contains will be changed to the correct font.</p>
 
+<p><b><a href="https://github.com/krs9851/video-game-accessibility/wiki/Visual-Accessibility">If you get stuck, consult the wiki!</a></b></p>
+
 <p>Steps:</p>
 <ol>
   <li>Decide what your original, sans-serif, and dyselxia friendly fonts will be
